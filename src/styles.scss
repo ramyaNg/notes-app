@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+body ::-webkit-scrollbar {
+  width: 5px;
+  margin: 0 10px;
+}
+
+body ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+ 
+body ::-webkit-scrollbar-thumb {
+   background: #2c2c2c;
+    border-radius: 10px;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #2c2c2c; 
+}

@@ -1,0 +1,7 @@
+<div class="list-container">
+    <app-note
+      (noteClicked)="noteClickHandler(note)"
+      [note]="note" 
+      *ngFor="let note of filteredNotes">
+    </app-note>
+  </div>

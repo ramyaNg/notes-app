@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="app-container">
+  <app-header></app-header>
+  <div class="main-container row">
+    <app-note-list *ngIf="!hideSideNav"></app-note-list>
+    <app-note-input></app-note-input>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

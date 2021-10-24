@@ -1,0 +1,24 @@
+<div class="header-container">
+    <div class="icon-container">
+        <!-- <i class="fa fa-user fa-5x"></i>
+<i class="fa fa-dashboard fa-5x"></i>
+<i class="fa fa-money fa-5x"></i>
+<i class="fa fa-home fa-5x"></i>
+<i class="fa fa-th fa-5x"></i> -->
+        <mat-icon matTooltip='Toggle Sidebar' (click)="sideNavToggleHandler()">web</mat-icon>
+        <mat-icon 
+          class="delete-icon"
+          [ngClass]="isNoteSeelcted? 'selected': ''"
+          matTooltip='Delete Note'
+          (click)="noteDeleteHandler()">delete
+        </mat-icon>
+        <mat-icon 
+          matTooltip='Create New Note'
+          (click)="noteAddEditHandler()">edit
+        </mat-icon>
+        </div>
+    <div class="search-bar">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Search" (keyup)="noteSearchHandler(searchInput)" #searchInput />
+  </div>
+  </div>
